@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai10_SwitchCase", "Bai10_S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai11_XayDungMenuLuaChon_SwitchCase", "Bai11_XayDungMenuLuaChon_SwitchCase\Bai11_XayDungMenuLuaChon_SwitchCase.csproj", "{AA406D25-3A28-4CBE-86E9-B0206F2DB938}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai12_While", "Bai12_While\Bai12_While.csproj", "{70977A53-8695-48F0-8F3E-16F8F6229FC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{AA406D25-3A28-4CBE-86E9-B0206F2DB938}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA406D25-3A28-4CBE-86E9-B0206F2DB938}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA406D25-3A28-4CBE-86E9-B0206F2DB938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70977A53-8695-48F0-8F3E-16F8F6229FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70977A53-8695-48F0-8F3E-16F8F6229FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70977A53-8695-48F0-8F3E-16F8F6229FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70977A53-8695-48F0-8F3E-16F8F6229FC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
