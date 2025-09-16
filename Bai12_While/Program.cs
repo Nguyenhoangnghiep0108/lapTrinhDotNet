@@ -13,6 +13,12 @@
                 bienSo = int.Parse(Console.ReadLine());
             }
             Console.WriteLine($"Ban da nhap so {bienSo}");
+            int a = 1;
+            while (true)//no tro thanh vong lap vo tan
+            {
+                Console.WriteLine($"{a}");
+                a++;
+            }
         }
     }
 }
