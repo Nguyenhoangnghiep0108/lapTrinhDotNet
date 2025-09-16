@@ -4,6 +4,14 @@
     {
         static void Main(string[] args)
         {
+            // do{--Vòng lập này ít nhất được chạy 1 lần
+            //  việc cần làm 
+            // }
+            //while(điều kiện lập);
+
+            //while(dieu kien lap){
+            // câu lệnh
+     //                            }
             int bienSo;
             Console.WriteLine("Vui long nhap so tu 1 den 99");
             bienSo = int.Parse(Console.ReadLine());
