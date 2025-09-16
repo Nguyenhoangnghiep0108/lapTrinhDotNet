@@ -43,6 +43,26 @@ namespace Bai14_Array
             {
                 Console.Write(i + " ");
             }
+            Array.Reverse(a);//Đảo ngược mảng lại
+            Console.WriteLine("Mảng a sao khi đảo ngược là:");
+            foreach (int i in a)
+            {
+                Console.Write(i + " ");
+            }
+            Array.Sort(a);
+            Console.WriteLine("Mảng a sao khi sắp xếp là:");
+            foreach (int i in a)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine("Kết quả sao khi tính tổng là :");
+            int tong = 0;
+            foreach(int i in a)
+            {
+                tong = tong + i;
+            }
+            Console.Write(tong);
+
         }
     }
 }
