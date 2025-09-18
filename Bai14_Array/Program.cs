@@ -36,7 +36,8 @@ namespace Bai14_Array
             int[] e = { 1, 3, 2, 4, 5, 6, 7 }; // Khởi tạo trực tiếp
             float[] b = new float[10];        // Khởi tạo mảng float rỗng
             float[] c = new float[10];        // Khởi tạo khi khai báo
-
+            //Khai bao mang 2 chieu
+            float[,] d = new float[3, 2] { { 1, 2 }, { 1, 2 }, { 1, 2 } };//3 dong 2 cot
             // In thử mảng e
             Console.WriteLine("Mảng e gồm các phần tử:");
             foreach (int i in e)
@@ -62,7 +63,18 @@ namespace Bai14_Array
                 tong = tong + i;
             }
             Console.Write(tong);
-
+            foreach (int i in d)
+            {
+                Console.Write(i + " ");
+            }
+            //Dung getlen de in mang ra
+            for (int i = 0; i < d.GetLength(0); i++)
+            {
+                for (int j = 0; j < d.GetLength(1); j++)
+                {
+                    Console.Write(d[i,j]+"\t");
+                }
+            }
         }
     }
 }
