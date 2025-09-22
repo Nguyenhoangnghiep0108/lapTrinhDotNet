@@ -9,21 +9,47 @@ namespace Bai20_OOP
 
     public class SinhVien//Tao doi tuong Sinh vien
     {
-        //Khai bao cac phuong thuc cua sinh vien
-        public int maSV;
-        public string tenSV;
-        public string queQuan;
-
-        public SinhVien(int maSV, string tenSV, string queQuan)//Khai bao constructor co tham so
+        #region khai bao thuoc tinh cua sinh vien
+        private int maSV;
+        private string hoTen;
+        #endregion
+        //Khoi tao constructor khogn tham so
+        public SinhVien()
+        {
+            this.maSV = 0;
+            this.hoTen = "No Name";
+        }
+        //Khoi tao constructor co tham so
+        public SinhVien(int maSV,string hoten)
         {
             this.maSV = maSV;
-            this.tenSV = tenSV;
-            this.queQuan = queQuan;
+            this.hoTen = hoten;
         }
-        public SinhVien() { //Khai bao constructor mac dinh
-              this.maSV = 0;
-            this.tenSV = "Noname";
-            this.queQuan = "No";
+        //Khai bao properties cho nguoi dung sua xoa khi sai private
+        public int MaSV
+        {
+            get { return maSV; }
+            set { maSV = value; }
         }
-    }
+        public string HoTen
+        {
+            get { return hoTen; }
+            set { hoTen = value; } 
+        }
+        //Phuong thuc tostring
+        public override string ToString()
+        {
+            return this.MaSV + "   " + this.HoTen; ;
+        }
+        public double TinhTong(params float[] mang)
+        {
+            float  s = 0;
+            foreach (float i in mang)
+            {
+                s = s + i;
+            }
+            return s;
+
+        }
+    }   
 }
