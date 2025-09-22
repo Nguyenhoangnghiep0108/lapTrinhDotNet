@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using Microsoft.VisualBasic;
+using System.Globalization;
 using System.Text;
 
 namespace Bai19_Try_Cat_Finally
@@ -7,20 +8,24 @@ namespace Bai19_Try_Cat_Finally
     {
         static void Main(string[] args)
         {
-            try
+            try//Toan do dong code loi
             {
                 Console.OutputEncoding = Encoding.UTF8;
-                StringInfo s = Console.ReadLine();
-                DateTime dateTime = dateTime.Parse(s);
+                String s = Console.ReadLine();
+                DateTime Ngay =DateTime.Parse(s);
+                Console.WriteLine("Ngay sinh cua ban la :" + Ngay.ToString("dd//mm//yyyy"));
             }
-            catch(Exception ex)
+            catch(Exception ex)//Xuat thong bao chuonwg trinh bi loi j
             {
-                Console.WriteLine("Vui long nhap lai du lieu ");
+                Console.WriteLine(ex.Message);
 
             }
             finally
             {
+                Console.WriteLine("Cam Mon ban da su dung chuong trinh");
             }
+            //Throw statement (Dua loi ra mot noi khac de hien thi)//
+
         }
     }
 }
